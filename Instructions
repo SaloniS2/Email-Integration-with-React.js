@@ -1,0 +1,17 @@
+Steps to integrate email with react js
+
+1)go to the emailjs third party website and create an account from which the email will be sent
+https://dashboard.emailjs.com/sign-up
+
+2)Set up the account by logging in from your google account and design the email template
+
+3) install emailjs package in your react app
+npm i emailjs-com
+
+4)Insert the following code in your App.js and App.css respectively
+		->In App.js replace the service id,tempelate id and user id with your ids respectively
+		->find your user id at -https://dashboard.emailjs.com/admin/integration
+		->find your service id at -https://dashboard.emailjs.com/admin
+		->find your template id at-https://dashboard.emailjs.com/admin/templates
+
+You Are Good To Go !!  HAPPY CODING :)

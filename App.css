@@ -1,0 +1,43 @@
+body{
+  /* box-sizing: border-box; */
+}
+.App{
+  /* background-color: #3f3160; */
+  min-height:400px;
+  width: 600px;
+  margin: 40px auto;
+  border:1px solid blue;
+}
+.container1{
+  display:flex;
+  margin:10px;
+  padding:5px;
+}
+.container2{
+  margin-top:0px;
+  margin:20px;
+  padding:5px;
+  width:400px;
+}
+.container3{
+  display:flex;
+  margin-left:300px;
+  padding:5px;
+}
+div{
+  margin:10px;
+  padding:5px;
+}
+input{
+  height:30px;
+  width: 250px;
+}
+button{
+  margin:10px;
+  padding:5px;
+  height:30px;
+  width: 100px;
+}
+#email_input{
+  width:550px;
+}
