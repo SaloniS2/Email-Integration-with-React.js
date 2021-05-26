@@ -8,7 +8,7 @@ function App() {
     const [toSend, setToSend] = useState({
     from_name: '',
     to_name: '',
-    // message: '',
+    message: '',
     to_email:''
         
   });
@@ -23,7 +23,7 @@ function App() {
       'your user id'
     )
       .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
+        console.log('SUCCESS!', response.status, response.text);        
       })
       .catch((err) => {
         console.log('FAILED...', err);
@@ -42,6 +42,7 @@ function App() {
     <div>
       <p>FROM NAME</p>
       <input
+        required
         type='text'
         name='from_name'
         placeholder='from name'
@@ -52,6 +53,7 @@ function App() {
     <div>
       <p>TO NAME</p>
       <input
+          required
           type='text'
           name='to_name'
           placeholder='to name'
@@ -63,6 +65,7 @@ function App() {
   <div className="container2">
     <p>Email ID</p>
     <input
+      required
       id='email_input'
       type='email'
       name='to_email'
@@ -71,11 +74,22 @@ function App() {
       onChange={handleChange}
     />
   </div>
+  <div>
+    <input
+    required
+    id='message-box'
+    type='text'
+    name='message'
+    placeholder='enter additional comments'
+    value={toSend.message}
+    onChange={handleChange}
+  />
+  </div>
   <div className="container3">
     <button >RESET</button>
     <button type='submit'>SHARE</button>
   </div>
-    
+  
 </form>
 </div>
   );
